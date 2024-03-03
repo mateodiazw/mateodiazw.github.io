@@ -62,7 +62,7 @@ a:hover {
     
 }
 
-.cartel:hover {
+.cartel:active {
     opacity: 90%;
     cursor: pointer;
 }
