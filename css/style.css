@@ -25,6 +25,7 @@ body {
 
 a {
     color: white ;
+    text-decoration: none;
 }
 
 a:hover {
@@ -42,13 +43,67 @@ a:hover {
     --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-.nav-item:hover {
+.nav-item {
     text-transform: uppercase ;
 }
-
-.btn {
+/* 
+.btn-primary {
      --bs-btn-padding-x: 0;
     --bs-btn-padding-y: 0;
+    background-color: #000000;
+    border: #000000;
+}
+
+.btn-primary:hover{
+    --bs-btn-padding-x: 0;
+   --bs-btn-padding-y: 0;
+   background-color: #000000;
+   border: #000000;
+}
+
+
+.btn:active{
+    --bs-btn-padding-x: 0;
+   --bs-btn-padding-y: 0;
+   background-color: #000000;
+   border: #000000;
+}
+
+
+.btn-primary:focus{
+    --bs-btn-padding-x: 0;
+   --bs-btn-padding-y: 0;
+   background-color: #000000;
+   border: #000000;
+} */
+
+.mi-boton{
+    background-color: #000000;
+    border-width: 0;
+}
+
+.btn-volver {
+    background-color: var(--bs-modal-bg);
+    border-bottom: white;
+    border-color: white;
+    border-right: white;
+}
+
+
+.btn-volver:active {
+    background-color: var(--bs-modal-bg);
+    border-bottom: white;
+    border-color: white;
+    border-right: white;
+    border-top: white;
+    border-left: white;
+}
+
+.modal {
+    --bs-modal-bg:white;
+    --bs-modal-header-border-color: var(--bs-modal-bg);
+    --bs-modal-footer-border-color:  var(--bs-modal-bg);
+
 }
 
 
@@ -62,7 +117,7 @@ a:hover {
     
 }
 
-.cartel:active {
+.cartel:hover {
     opacity: 90%;
     cursor: pointer;
 }
@@ -100,3 +155,14 @@ a:hover {
         right: auto;
     } */
 } 
+
+@media (hover: hover) {
+    
+}
+
+@media (hover: none) {
+    .cartel {
+        display: none
+    }
+}
+
